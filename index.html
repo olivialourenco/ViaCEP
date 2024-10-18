@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIA CEP</title>
+
+    <script src="js/script.js"></script>
+
+    <link rel="stylesheet" href="css/estilo.css">
+
+</head>
+<body>
+    
+    <form method="get" action=".">
+        <h1>Formulário para teste da API VIA CEP</h1>
+        <label> CEP </label>
+        <input name="cep" id="cep" type="text" value="" size="10" maxlength="9" onblur="pesquisacep(this.value);"><br> <!-- passando seu proprio valor -->
+        
+        <label> Rua </label>
+        <input name="rua" id="rua" type="text" size="60"><br>
+        
+        <label> Bairro </label>
+        <input name="bairro" id="bairro" type="text" size="40"><br>
+        
+        <label> Cidade </label>
+        <input name="cidade" id="cidade" type="text" size="40"><br>
+        
+        <label>Estado</label>
+        <input name="uf" id="uf" type="text" size="2"><br>
+        
+        <label> IBGE </label>
+        <input name="ibge" id="ibge" type="text" size="8">
+        <br>
+    </form>
+</body>
+</html>
+
